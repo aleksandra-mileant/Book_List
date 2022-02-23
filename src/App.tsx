@@ -1,27 +1,24 @@
 import React from 'react';
 import './App.scss';
-
-interface Props {
-  onClick: () => void;
-}
-
-export const Provider: React.FC<Props> = React.memo(
-  ({ onClick, children }) => (
-    <button
-      type="button"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  ),
-);
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BooksList } from './components/BookList';
+import { NavBar } from './components/NavBar';
+import { AddBook } from './components/AddBook';
+import { HomePage } from './components/HomePage';
+import { EditUser } from './components/EditUser/EditUser';
+import { FindBook } from './components/FindBook';
 
 export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>
-        <TodoList />
-      </Provider>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="books" element={<BooksList />} />
+        <Route path="add" element={<AddBook />} />
+        <Route path="edit/:id" element={<EditUser />} />
+        <Route path="search" element={<FindBook />} />
+      </Routes>
+    </BrowserRouter>
   );
 };

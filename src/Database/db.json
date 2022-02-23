@@ -1,0 +1,53 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Grass is Always Greener!",
+      "author": "Jeffrey Archerz",
+      "category": "Modern Times",
+      "ISBN": "1-86092-012-8"
+    },
+    {
+      "id": 2,
+      "title": "Murder!",
+      "author": "Arnold Bennett",
+      "category": "Crime",
+      "ISBN": "1-86092-012-8"
+    },
+    {
+      "id": 3,
+      "title": "The Grass is Always Greener",
+      "author": "Jeffrey Archer",
+      "category": "Modern Times",
+      "ISBN": "1-86092-049-7"
+    },
+    {
+      "id": 4,
+      "title": "A Boy at Seven",
+      "author": "John Bidwell",
+      "category": "First Edition",
+      "ISBN": "1-86092-022-5"
+    },
+    {
+      "id": 5,
+      "title": "The Higgler",
+      "author": "A. E. Coppard",
+      "category": "Romance",
+      "ISBN": "1-86092-010-1"
+    },
+    {
+      "id": 6,
+      "title": "The Open Boat",
+      "author": "Stephen Crane ",
+      "category": "Classic",
+      "ISBN": "1-86092-025-x"
+    },
+    {
+      "id": 7,
+      "title": "The Speckled Band",
+      "author": "Sir Arthur Conan Doyle",
+      "category": "Crime",
+      "ISBN": "1-86092-003-9"
+    }
+  ]
+}
